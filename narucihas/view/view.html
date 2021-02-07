@@ -1,0 +1,20 @@
+<md-content flex id="content" layout='column'>
+    <div style="text-align: center;"><h2 style="color: white;">Lista proizvoda za pripremu</h2></div>
+    <md-card ng-repeat="foodInfo in foodData" class="contectCard">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{foodInfo.question}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <md-list>
+                <md-list-item class="md-3-line">
+                    <div class="md-list-item-text viewList" layout="column" ng-repeat="hrana in foodInfo.hrana">
+                        <h3 ng-value="hrana.option" aria-label="{{ hrana.option }}">{{hrana.option}} <br><br> {{hrana.vote}}</h3>
+                    </div>
+                </md-list-item>
+                <md-divider ></md-divider>
+            </md-list>
+        </md-card-content>
+    </md-card>
+</md-content>

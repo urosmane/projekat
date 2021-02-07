@@ -1,0 +1,17 @@
+<md-content flex id="content" layout='column'>
+    <div style="text-align: center;"><h2 style="color: white;">Kliknite na proizvod i automatski će biti prosledjeno za pripremu</h2></div>
+    <md-card ng-repeat='foodInfo in foodData' ng-hide="hiddenrows.indexOf($index) !== -1">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{foodInfo.question}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <md-radio-group layout="column" ng-model="foodInfo.selected" ng-change='updateVote($index)'>
+                <md-radio-button ng-repeat="hrana in foodInfo.hrana" ng-value="hrana.option" aria-label="{{ hrana.option }}">
+                    {{hrana.option }}
+                </md-radio-button>
+            </md-radio-group>
+        </md-card-content>
+    </md-card>
+</md-content>

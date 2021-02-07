@@ -1,0 +1,85 @@
+<md-content layout-padding>
+    <form name="projectForm">
+        <md-input-container class="md-block">
+            <label>Unesite novu podlistu u Vaš Meni:</label>
+            <input md-maxlength="70" required name="question" ng-model="formData.hasQuestion">
+            <div ng-messages="projectForm.question.$error">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+                <div ng-message="md-maxlength">Manje od 70 karaktera duzine.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food1" ng-model="formData.hasFood1">
+            <div ng-messages="projectForm.hasFood1.$error">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food2" ng-model="formData.hasFood2"/>
+            <div ng-messages="projectForm.hasFood2.$error" role="alert">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food3" ng-model="formData.hasFood3"/>
+            <div ng-messages="projectForm.hasFood3.$error" role="alert">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food4" ng-model="formData.hasFood4"/>
+            <div ng-messages="projectForm.hasFood4.$error" role="alert">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food5" ng-model="formData.hasFood5"/>
+            <div ng-messages="projectForm.hasFood5.$error" role="alert">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food6" ng-model="formData.hasFood6"/>
+            <div ng-messages="projectForm.hasFood6.$error" role="alert">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food7" ng-model="formData.hasFood7"/>
+            <div ng-messages="projectForm.hasFood7.$error" role="alert">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food8" ng-model="formData.hasFood8"/>
+            <div ng-messages="projectForm.hasFood8.$error" role="alert">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food9" ng-model="formData.hasFood9"/>
+            <div ng-messages="projectForm.hasFood9.$error" role="alert">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <label>Proizvod</label>
+            <input required name="food10" ng-model="formData.hasFood10"/>
+            <div ng-messages="projectForm.hasFood10.$error" role="alert">
+                <div ng-message="required">Ovo polje je obavezno.</div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <md-button class="md-raised md-primary" ng-disabled="projectForm.$invalid" ng-click="submitHas($event)">Kreiraj ponudu</md-button>
+        </md-input-container>
+    </form>
+</md-content>

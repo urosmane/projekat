@@ -1,0 +1,44 @@
+body {
+    background-image: url("Image/background.jpg");
+}
+
+#moveright{
+    text-align:right;
+}
+
+.md-button {
+    font-size: 17px;
+    font-family: Trebuchet MS;
+    margin-top: 15px;
+}
+
+#Navbar {
+    background-color: darkred;
+}
+
+#content {
+    background-image: url("Image/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+md-card.md-default-theme, md-card {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.md-button:enabled {
+    background-color: darkred!important;
+}
+
+.md-button {
+    margin: auto 0;
+}
+
+.md-button span {
+    color: white;
+}
+
+.viewList {
+    padding: 10px;
+}
