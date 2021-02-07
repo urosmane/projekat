@@ -1,0 +1,8 @@
+POKRETANJE PROJEKTA 
+KORISTIM MAC OS
+
+1. U folderu models pokrecemo rehinkdb fajl ( Postoji i rethinkdb.exe za Windows racunare )
+2. Otvara se Terminal i pokrece server
+3. Otvaramo novi Terminal prozor i pozicioniramo se na folder projekta
+4. Kucamo komandu node app
+5. Projekat je uspesno otvoren i moze se videti na localhost:3000
